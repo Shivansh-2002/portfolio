@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808;
+    color: #fff;   
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.cont{
+    text-align: center;
+    padding: 10px 10%; 
+}
+nav{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px;
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px; 
+}
+.header-text{
+    margin-top: 20% ;
+    font-size: 30px;
+}
+
+.header-text h1{
+    align-items: center;
+}
+.container{
+    padding: 5px 5%; 
+}
+/*------about-------*/ 
+#about{
+    padding: 35px 0px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #2a819e);
+    border-radius: 10px;
+    position:  absolute   ;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition :height 0.5s;
+}
+.layer h3{
+    font-weight:500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #2a819e;
+    text-decoration: none;
+    font-size: 9px;
+    line-height: 30px;
+    background: #fff;
+    width:  30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.kk{
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;    
+}
+.pp{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;    
+}
+.badge {
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    margin-left: 5px;
+    align-items: baseline;
+    position: absolute;
+    border-radius: 0px;
+}
+
+.badge-algo {
+    background-color: blue;
+    color: white;
+    padding: 5px 8px;
+    margin-left: 128px;
+    align-items: baseline;
+    position: absolute;
+    border-radius: 0px;
+}
+
+#projects{
+    padding: 50px 0px;
+    color: #ababab;
+    position: relative;
+}
+
+.my_projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    text-align:center;
+}
+
+.proj{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.proj img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transform: 0.5;
+}
+.proj:hover img{
+    transform: scale(1.1);
+}
+.proj:hover .layer{
+    height: 100%;
+}
+
+#contact{
+    padding: 10px 0px;
+    color: #ababab;
+}
+
+.titl{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.contain{
+    padding: 10px 10%; 
+    text-align: center;
+    flex-basis: 0%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #2a819e;
+    border-radius: 6px;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #2a819e ;
+}
+.contain form{
+    width: 100%;
+}
+form input, form textarea{
+width: 100%;
+border: 0;
+outline: none;
+background: #262626;
+padding: 15px;
+margin: 15px;
+color: #fff;
+font-size:  18px;
+border-radius:  6px;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top:  20px;
+    position: absolute;
+    margin-bottom: 0px;
+
+}
+.foot{
+    display: inline-block;
+    margin-top: -50px;
+}
+
+/* css for small screens*/
+@media only screen and (max-width: 600px){
+
+}
