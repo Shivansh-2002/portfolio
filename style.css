@@ -81,7 +81,7 @@ nav ul li a{
 }
 /*------about-------*/ 
 #about{
-    padding: 35px 0px;
+    padding: 25px 0px;
     color: #ababab;
 }
 .row{
@@ -126,7 +126,7 @@ nav ul li a{
 }
 
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 37%;
 }
 .about-col-1 img{
     width: 100%;
@@ -277,4 +277,140 @@ form .btn2{
 /* css for small screens*/
 @media only screen and (max-width: 600px){
 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+.experience, .internships {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+.internship-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    animation: slideUp 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+.experience-item {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.internship-cards {
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+}
+
+.my_projects {
+    grid-template-columns: 1fr;
+}
+
+.proj img {
+    height: 250px;
+    object-fit: cover;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+.header-text {
+    margin-top: 40%;
+    font-size: 20px;
+}
+
+.about-col-1, .about-col-2 {
+    flex-basis: 100%;
+}
+}
+
+/* New styles for experience and internships */
+.experience-item {
+background: rgba(255, 255, 255, 0.05);
+margin-bottom: 20px;
+transition: transform 0.3s;
+}
+
+.experience-item:hover {
+transform: translateY(-5px);
+}
+
+.card {
+background: rgba(255, 255, 255, 0.05);
+transition: transform 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.show-more-btn {
+display: inline-block;
+padding: 10px 20px;
+background: #2a819e;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+transition: background 0.3s;
+}
+
+.show-more-btn:hover {
+background: #1f6077;
+}
+
+/* Project grid modifications */
+.my_projects {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+}
+
+.proj {
+height: 300px;
 }
